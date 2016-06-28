@@ -1,0 +1,100 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tcs.androidproject.Fragment.NetBankngPayFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Username"
+            android:id="@+id/textViewUsername"
+            android:layout_marginTop="56dp"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Password"
+            android:id="@+id/textViewPassword"
+            android:layout_below="@+id/textViewUsername"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="40dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTxtUsername"
+            android:background="#417fa67f"
+            android:singleLine="true"
+            android:layout_alignTop="@+id/textViewUsername"
+            android:layout_toRightOf="@+id/textViewUsername"
+            android:layout_toEndOf="@+id/textViewUsername"
+            android:layout_marginLeft="52dp"
+            android:ems="10"
+            android:layout_marginStart="52dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTxtPassword"
+            android:background="#417fa67f"
+            android:layout_marginTop="39dp"
+            android:singleLine="true"
+            android:layout_toRightOf="@+id/textViewPassword"
+            android:layout_toEndOf="@+id/textViewPassword"
+            android:layout_below="@+id/editTxtUsername"
+            android:ems="10"
+            android:layout_marginLeft="52dp"
+            />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/editTxtUsername"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SBI"
+                android:id="@+id/radioBtnSbi"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ICICI"
+                android:id="@+id/radioBtnIcici"
+                android:layout_weight="1"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HDFC"
+                android:id="@+id/radioBtnHdfc"
+                android:layout_weight="1"/>
+
+        </RadioGroup>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Proceed"
+            android:id="@+id/btnProceedPay"
+            android:layout_below="@+id/editTxtPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+    </RelativeLayout>
+</FrameLayout>
