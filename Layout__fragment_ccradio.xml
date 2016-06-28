@@ -1,0 +1,54 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tcs.androidproject.Fragment.CCRadioFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Pay From: "
+            android:id="@+id/textViewPayFrom"
+            android:layout_gravity="left|top"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewPayFrom"
+            android:id="@+id/radioGrp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Saved Card"
+                android:id="@+id/radioBtnSavedCard"
+                android:layout_below="@+id/textViewPayFrom"
+                android:layout_toRightOf="@+id/textViewPayFrom"
+                android:layout_weight="1"
+                android:layout_toEndOf="@+id/textViewPayFrom" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Card"
+                android:id="@+id/radioBtnNewCard"
+                android:checked="false"
+                android:layout_weight="1"
+                android:layout_alignTop="@+id/radioBtnSavedCard"
+                android:layout_toRightOf="@+id/radioBtnSavedCard"
+                android:layout_toEndOf="@+id/radioBtnSavedCard" />
+
+        </RadioGroup>
+    </RelativeLayout>
+
+</FrameLayout>
