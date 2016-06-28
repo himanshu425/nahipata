@@ -1,0 +1,168 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookingActivity">
+
+    <include
+        layout="@layout/tool_bar"
+        android:id="@+id/toolbar"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:layout_marginBottom="20dp"
+        android:singleLine="true"
+        android:id="@+id/editTxtName"
+        android:hint="Name"
+        android:layout_below="@+id/txtViwBookingDetails"
+        android:background="#417fa67f"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+      />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTxtMobile"
+        android:singleLine="true"
+        android:ems="15"
+        android:layout_marginBottom="20dp"
+        android:background="#417fa67f"
+        android:inputType="number"
+        android:hint="Mobile No"
+        android:layout_below="@+id/editTxtName"
+        android:layout_alignLeft="@+id/editTxtName"
+        android:layout_alignStart="@+id/editTxtName"
+        android:maxLength="10"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewCheckIn"
+        android:layout_alignLeft="@+id/editTxtName"
+        android:hint="Check-In"
+        android:textSize="20dp"
+        android:layout_below="@+id/editTxtMobile"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTxtCheckIn"
+        android:layout_below="@+id/editTxtMobile"
+        android:singleLine="true"
+        android:ems="11"
+
+        android:editable="false"
+        android:background="#417fa67f"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/textViewCheckIn"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewCheckOut"
+        android:layout_alignLeft="@+id/editTxtName"
+        android:hint="Check-Out"
+        android:textSize="18dp"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/textViewCheckIn"/>
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTxtCheckOut"
+        android:layout_below="@+id/editTxtCheckIn"
+        android:singleLine="true"
+        android:ems="11"
+
+        android:editable="false"
+        android:background="#417fa67f"
+        android:layout_marginBottom="20dp"
+        android:layout_alignRight="@+id/editTxtName"
+        android:layout_marginLeft="5dp"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTxtNoOfPerson"
+        android:layout_below="@+id/editTxtCheckOut"
+        android:singleLine="true"
+        android:ems="15"
+        android:hint="No Of Persons"
+        android:background="#417fa67f"
+        android:layout_marginBottom="20dp"
+        android:layout_alignLeft="@+id/editTxtName"
+        android:layout_alignStart="@+id/editTxtName"
+        />
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:inputType="number"
+        android:layout_marginBottom="20dp"
+        android:background="#417fa67f"
+        android:maxLength="1"
+        android:hint="No of rooms required"
+        android:singleLine="true"
+        android:id="@+id/editTxtNoRooms"
+        android:layout_below="@+id/editTxtNoOfPerson"
+        android:layout_alignLeft="@+id/editTxtMobile"
+        android:layout_alignStart="@+id/editTxtMobile" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:hint="Amount Payable"
+        android:layout_marginBottom="20dp"
+        android:background="#417fa67f"
+        android:singleLine="true"
+        android:id="@+id/editTxtAmount"
+        android:layout_below="@+id/editTxtNoRooms"
+        android:layout_alignLeft="@+id/editTxtNoRooms"
+        android:layout_alignStart="@+id/editTxtNoRooms" />
+
+
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnProceed"
+        android:background="#3d67a7"
+        android:text="Proceed"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:layout_below="@+id/editTxtAmount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Booking Details"
+        android:textSize="25dp"
+        android:id="@+id/txtViwBookingDetails"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>
+</ScrollView>
