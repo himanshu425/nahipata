@@ -1,0 +1,36 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tcs.androidproject.Fragment.NetBnkOtpFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editTxtOTP"
+            android:hint="Enter OTP"
+            android:background="#417fa67f"
+            android:singleLine="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pay"
+            android:id="@+id/btnNetBnkngPay"
+            android:layout_below="@+id/editTxtOTP"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+
+</FrameLayout>
