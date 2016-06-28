@@ -1,0 +1,162 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tcs.androidproject.Fragment.NewCardDetailFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="I have"
+            android:id="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewPayFrom"
+            android:id="@+id/radioGrp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/visa"
+                android:id="@+id/radioBtnVisa"
+                android:layout_marginLeft="60dp"
+
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/textView"
+                android:layout_toEndOf="@+id/textView"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioBtnMastero"
+                android:layout_marginLeft="60dp"
+
+                android:layout_alignParentTop="true"
+                android:drawableRight="@drawable/mastero"
+                android:layout_toRightOf="@+id/radioBtnVisa"
+                android:layout_toEndOf="@+id/radioBtnVisa"
+                android:checked="false" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Card Number"
+            android:id="@+id/textViewCardNo"
+            android:layout_below="@+id/radioGrp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Name On Card"
+            android:id="@+id/textViewName"
+            android:layout_below="@+id/textViewCardNo"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="CVV Number"
+            android:id="@+id/textViewCvv"
+            android:layout_below="@+id/textViewName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Expiry Date"
+            android:id="@+id/textViewExpDate"
+            android:layout_below="@+id/textViewCvv"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTxtCardNo"
+            android:ems="10"
+            android:background="#417fa67f"
+            android:singleLine="true"
+            android:layout_below="@+id/radioGrp"
+            android:layout_toRightOf="@+id/textViewCardNo"
+            android:layout_toEndOf="@+id/textViewCardNo"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="24dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTxtNameCard"
+            android:ems="10"
+            android:background="#417fa67f"
+            android:singleLine="true"
+            android:layout_below="@+id/editTxtCardNo"
+            android:layout_toRightOf="@+id/textViewName"
+            android:layout_toEndOf="@+id/textViewName"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="21dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTxtCvv"
+            android:ems="10"
+            android:background="#417fa67f"
+            android:singleLine="true"
+            android:layout_below="@+id/editTxtNameCard"
+            android:layout_toRightOf="@+id/textViewName"
+            android:layout_toEndOf="@+id/textViewName"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="22dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTxtExpiryDate"
+            android:ems="10"
+            android:background="#417fa67f"
+            android:singleLine="true"
+            android:layout_below="@+id/editTxtCvv"
+            android:layout_toRightOf="@+id/textViewExpDate"
+            android:layout_toEndOf="@+id/textViewExpDate"
+            android:layout_marginLeft="37dp"
+            android:layout_marginTop="19dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pay"
+            android:id="@+id/btnPayNwCard"
+            android:layout_below="@id/editTxtCvv"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="55dp"
+            android:nestedScrollingEnabled="true" />
+    </RelativeLayout>
+
+
+</FrameLayout>
