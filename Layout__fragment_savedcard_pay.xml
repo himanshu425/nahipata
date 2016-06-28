@@ -1,0 +1,53 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tcs.androidproject.Fragment.SavedcardPayFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/my_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1a19a7"
+            android:scrollbars="vertical" />
+
+        <!--   <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textAppearance="?android:attr/textAppearanceMedium"
+               android:text="Select Card"
+               android:id="@+id/textViewSelectCard"
+               android:layout_alignParentTop="true"
+               android:layout_alignParentLeft="true"
+               android:layout_alignParentStart="true"
+               android:layout_marginTop="5dp" />
+
+           <Spinner
+               android:layout_width="100dp"
+               android:layout_height="30dp"
+
+               android:id="@+id/spnSavedCards"
+               android:layout_alignTop="@+id/textViewSelectCard"
+               android:layout_toRightOf="@+id/textViewSelectCard"
+               android:layout_toEndOf="@+id/textViewSelectCard"
+               android:layout_marginLeft="20dp"
+               android:entries="@array/savedCard"
+               />
+
+           <EditText
+               android:layout_width="wrap_content"
+               android:layout_height="200dp"
+               android:id="@+id/editText"
+               android:ems="10"
+               android:layout_below="@id/spnSavedCards"
+               android:layout_centerVertical="true"
+               android:layout_alignParentLeft="true"
+               android:layout_alignParentStart="true" />-->
+    </RelativeLayout>
+
+
+</FrameLayout>
